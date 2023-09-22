@@ -1,0 +1,39 @@
+.containerHerosection {
+  background-color: rgb(65, 65, 76);
+  height: 100vh;
+}
+.backgroundImg {
+  width: 70vw;
+  height: 100vh;
+}
+.parentDiv {
+  display: flex;
+  /* height: 100vh; */
+}
+.divStyle {
+  width: 30%;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.box-1 {
+  top: 0;
+  background-color: #fff;
+  transform: skewX(20deg);
+  height: 50%;
+  width: 120%;
+  border-right: 10px solid rgba(0, 0, 0, 0.1);
+}
+.box-2 {
+  bottom: 0;
+  background-color: #fff;
+  transform: skewX(-20deg);
+  height: 50%;
+  width: 120%;
+  border-right: 10px solid rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 768px) {
+  .divStyle {
+    display: none;
+  }
+}
