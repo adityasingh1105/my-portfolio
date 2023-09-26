@@ -42,6 +42,6 @@ const hobbyData = [
   { id: 1, hobby: "Music", hobbyImg: musicImg },
   { id: 2, hobby: "Travel", hobbyImg: travelImg },
   { id: 3, hobby: "Movie", hobbyImg: movieImg },
-  { id: 4, hobby: "Sports", hobbyImg: travelImg },
+  { id: 4, hobby: "Camping", hobbyImg: campingImg },
 ];
 export { navbarData, Images, statsData, aboutData, hobbyData };

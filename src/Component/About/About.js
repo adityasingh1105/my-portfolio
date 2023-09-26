@@ -11,7 +11,7 @@ export default function About() {
     return (
       <div className="aboutInnerMainDiv">
         <div className="innerFirstDiv">
-          <img src={Images.aboutImg} className="aboutImg" />
+          <img src={Images.aboutImg} className="aboutImg" alt="AboutImg" />
         </div>
         <div className="innerSecondDiv">
           <div>

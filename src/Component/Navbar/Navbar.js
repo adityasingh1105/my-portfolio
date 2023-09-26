@@ -26,7 +26,9 @@ export default function Navbar() {
       return (
         <div className="dropMenu">
           {navbarData.map((item) => (
-            <a className="navbarTxt">{item.title}</a>
+            <a href="test" className="navbarTxt">
+              {item.title}
+            </a>
           ))}
         </div>
       );
@@ -48,7 +50,7 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <a className="menuTxt" onClick={toggleMenu}>
+        <a className="menuTxt" onClick={toggleMenu} href="test2">
           MENU
         </a>
       </div>
