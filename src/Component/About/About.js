@@ -3,10 +3,12 @@ import "./About.css";
 import { Images, aboutData, hobbyData } from "../../Constant";
 
 export default function About() {
-  const handleCallButtonClick = (item) => {
-    alert(item.id);
-    // item.id === 5 ? (window.location.href = `tel:${914477411}`) : "";
-  };
+ const handleCallButtonClick = (item) => {
+   if (item.id === 5) {
+     window.location.href = `tel:${914477411}`;
+   }
+ };
+
   const containerAbout = () => {
     return (
       <div className="aboutInnerMainDiv">
@@ -51,10 +53,9 @@ export default function About() {
         {aboutData.map((item) => (
           <div className="detailsTxt" key={item.titleKey}>
             <p className="aboutTitleKey">{item.titleKey}</p>
-
             <p
               className="aboutTitleValue"
-              onClick={handleCallButtonClick(item)}
+              onClick={() => handleCallButtonClick(item)}
             >
               {item.titleValue}
             </p>
