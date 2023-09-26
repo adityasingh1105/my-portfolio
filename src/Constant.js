@@ -4,6 +4,11 @@ import clientImg from "../src/Assets/clientImg.png";
 import projectImg from "../src/Assets/projectImg.png";
 import aboutImg from "../src/Assets/aboutImg.png";
 
+import campingImg from "../src/Assets/campingImg.png";
+import movieImg from "../src/Assets/movieImg.png";
+import musicImg from "../src/Assets/musicImg.png";
+import travelImg from "../src/Assets/travelImg.png";
+
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
   { id: 2, title: "ABOUT", hrefKey: "#About" },
@@ -34,9 +39,9 @@ const aboutData = [
   { id: 5, titleKey: "Phone:", titleValue: "+91-9144774111" },
 ];
 const hobbyData = [
-  { id: 1, hobby: "Music", titleValue: "Aditya Singh" },
-  { id: 2, hobby: "Travel", titleValue: "May 11, 1998" },
-  { id: 3, hobby: "Movie", titleValue: "Jabalpur India" },
-  { id: 4, hobby: "Sports", titleValue: "aditya@gmail.com" },
+  { id: 1, hobby: "Music", hobbyImg: musicImg },
+  { id: 2, hobby: "Travel", hobbyImg: travelImg },
+  { id: 3, hobby: "Movie", hobbyImg: movieImg },
+  { id: 4, hobby: "Sports", hobbyImg: travelImg },
 ];
 export { navbarData, Images, statsData, aboutData, hobbyData };

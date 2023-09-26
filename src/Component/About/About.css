@@ -5,15 +5,18 @@
 .aboutInnerMainDiv {
   display: flex;
 }
+
 .intoTxt {
   color: #b1b492;
   font-weight: 800;
   font-size: 15px;
+  margin-bottom: 15px;
 }
 .aboutTxt {
   color: #000;
   font-weight: 800;
   font-size: 35px;
+  margin-bottom: 25px;
 }
 .innerFirstDiv {
   display: flex;
@@ -23,7 +26,8 @@
   display: flex;
   flex: 0.6;
   flex-direction: column;
-  padding: 60px 40px;
+  padding: 100px 40px;
+  justify-content: space-between;
 }
 .aboutImg {
   width: 100%;
@@ -36,6 +40,7 @@
 }
 .detailsTxt {
   display: flex;
+  margin-bottom: 10px;
 }
 .aboutTitleKey {
   font-size: 17px;
@@ -69,6 +74,11 @@
   justify-content: center;
   align-items: center;
 }
+.hobbyImg {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
 @media screen and (max-width: 1000px) {
   .containerAbout {
     padding: 0px 30px;
@@ -78,5 +88,15 @@
 @media screen and (max-width: 768px) {
   .containerAbout {
     padding: 0px 20px;
+  }
+  .aboutInnerMainDiv {
+    display: block;
+  }
+  .innerSecondDiv {
+    padding: 30px 0px;
+
+  }
+  .hobbyMainDiv {
+    flex-wrap: wrap;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import "./Herosection.css";
 import { Images, statsData } from "../../Constant";
 import Button from "@material-ui/core/Button";
@@ -22,8 +22,6 @@ function Herosection(props) {
   };
   //----------pdf download function end---
 
- 
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setbgImg((prevBgImg) => !prevBgImg);
@@ -33,7 +31,7 @@ function Herosection(props) {
 
   const herosectionBox = () => {
     return (
-      <div className="containerHerosection" id="Home" >
+      <div className="containerHerosection" id="Home">
         <div className="parentDiv">
           <div className="divStyle">
             <div className="box-1"></div>
@@ -61,7 +59,7 @@ function Herosection(props) {
       <div className="centerMainBox">
         <div className="headingLabel">WE DESIGN & BUILD BRANDS</div>
         <div className="introLabel">
-          Hi, I am <span className="nameSpan">Clyde</span> This is
+          Hi, I am <span className="nameSpan">Aditya</span> This is
           <br /> my favourite work.
         </div>
         <Button variant="contained" color="success" className={classes.hireBtn}>
