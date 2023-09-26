@@ -1,3 +1,9 @@
+.navabrMain {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(150, 141, 146);
+  z-index: 9999;
+}
 .containerNavbar {
   height: 70px;
   width: 100%;
@@ -16,7 +22,9 @@
   transition: color 0.3s;
   padding: 0px 2px;
   border-radius: 2px 2px;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid transparent;
+  color: #000;
+  text-decoration: none;
 }
 .navbarTxt:hover {
   color: #b1b493;
@@ -24,6 +32,7 @@
 }
 .menuTxt {
   display: none;
+  cursor: pointer;
 }
 
 .logoTxt {
@@ -39,10 +48,19 @@
   height: 3px;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 1000px) {
+  .containerNavbar {
+    padding: 0px 30px;
+  }
+  .innerTxtdiv {
+    gap: 20px;
+  }
+}
 @media screen and (max-width: 768px) {
   .containerNavbar {
     background: #000;
-    padding: 0px 30px;
+    padding: 0px 20px;
   }
   .navbarTxt {
     color: #fff;

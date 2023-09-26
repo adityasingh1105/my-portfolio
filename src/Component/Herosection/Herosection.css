@@ -8,7 +8,7 @@
 }
 .parentDiv {
   display: flex;
-  /* height: 100vh; */
+  position: relative;
 }
 .divStyle {
   width: 30%;
@@ -32,8 +32,91 @@
   width: 120%;
   border-right: 10px solid rgba(0, 0, 0, 0.1);
 }
+
+.headingLabel {
+  font-size: 16px;
+  color: #b1b492;
+  font-weight: 500;
+}
+
+.introLabel {
+  font-size: 50px;
+  color: #000;
+  font-weight: 900;
+  margin: 15px 0px;
+}
+
+.nameSpan {
+  font-size: 50px;
+  color: #b1b492;
+  font-weight: 900;
+}
+
+.centerMainBox {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90px;
+}
+.statsMainDiv {
+  height: 200px;
+  background: rgb(248, 249, 250);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 90px;
+}
+.numberStats {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 3px;
+}
+.statsTitle {
+  font-size: 15px;
+  font-weight: 600;
+  color: #b1b492;
+}
+.statsCircleDiv {
+  height: 70px;
+  width: 70px;
+  background-color: #b1b492;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.statsInnerDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.statsImg {
+  height: 40px;
+  width: 40px;
+}
+.spanIcon {
+  font-size: 25px;
+}
 @media screen and (max-width: 768px) {
   .divStyle {
     display: none;
+  }
+  .statsMainDiv {
+    height: inherit;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 50px 20px;
+    gap: 40px;
+  }
+  .centerMainBox {
+    left: 20px;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .statsMainDiv {
+    padding: 0px 30px;
   }
 }

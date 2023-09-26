@@ -1,18 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Navbar.css";
 import { navbarData } from "../../Constant";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  //---------navbar Shadow start-----
+  const navbarRef = useRef();
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (navbarRef) {
+        if (window.scrollY > 0) {
+          navbarRef.current.style.boxShadow = "-5px 10px 10px rgba(0,0,0,0.2)";
+        } else {
+          navbarRef.current.style.boxShadow = "none";
+        }
+      }
+    });
+  });
+  //---------navbar Shadow end-----
+
   const renderMenuTablet = () => {
     if (isMenuOpen) {
       return (
         <div className="dropMenu">
           {navbarData.map((item) => (
-            <div onClick={() => console.log("")} className="navbarTxt">
-              {item.title}
-            </div>
+            <a className="navbarTxt">{item.title}</a>
           ))}
         </div>
       );
@@ -25,24 +39,24 @@ export default function Navbar() {
   };
   const renderMenu = () => {
     return (
-      <div className="containerNavbar">
+      <div className="containerNavbar" ref={navbarRef}>
         <div className="logoTxt">CLYDE</div>
         <div className="innerTxtdiv">
           {navbarData.map((item) => (
-            <div onClick={() => console.log("")} className="navbarTxt">
+            <a href={item.hrefKey} className="navbarTxt">
               {item.title}
-            </div>
+            </a>
           ))}
         </div>
-        <div className="menuTxt" onClick={toggleMenu}>
+        <a className="menuTxt" onClick={toggleMenu}>
           MENU
-        </div>
+        </a>
       </div>
     );
   };
 
   return (
-    <div>
+    <div className="navabrMain">
       {renderMenu()}
       {renderMenuTablet()}
     </div>
