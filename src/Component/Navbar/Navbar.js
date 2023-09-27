@@ -50,9 +50,9 @@ export default function Navbar() {
             </a>
           ))}
         </div>
-        <a className="menuTxt" onClick={toggleMenu} href="test2">
+        <p className="menuTxt" onClick={toggleMenu}>
           MENU
-        </a>
+        </p>
       </div>
     );
   };

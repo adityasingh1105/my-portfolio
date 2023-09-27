@@ -3,11 +3,11 @@ import "./About.css";
 import { Images, aboutData, hobbyData } from "../../Constant";
 
 export default function About() {
- const handleCallButtonClick = (item) => {
-   if (item.id === 5) {
-     window.location.href = `tel:${914477411}`;
-   }
- };
+  const handleCallButtonClick = (item) => {
+    if (item.id === 5) {
+      window.location.href = `tel:${914477411}`;
+    }
+  };
 
   const containerAbout = () => {
     return (
