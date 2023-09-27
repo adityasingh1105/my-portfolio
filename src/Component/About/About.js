@@ -5,7 +5,7 @@ import { Images, aboutData, hobbyData } from "../../Constant";
 export default function About() {
   const handleCallButtonClick = (item) => {
     if (item.id === 5) {
-      window.location.href = `tel:${914477411}`;
+      window.location.href = `tel:${9144774111}`;
     }
   };
 
@@ -17,7 +17,7 @@ export default function About() {
         </div>
         <div className="innerSecondDiv">
           <div>
-            <p className="intoTxt">MY INTRO</p>
+            <p className="introTxt">MY INTRO</p>
             <p className="aboutTxt">About Me</p>
             <p className="aboutDescription">
               A small river named Duden flows by their place and supplies it

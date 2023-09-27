@@ -1,4 +1,52 @@
 .containerSkills {
-  background-color: rgb(107, 218, 9);
-  height: 100vh;
+  background-color: #f8f9fa;
+  padding: 100px 0px;
+}
+.skillUpper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+  padding: 0px 20px;
+}
+.skillTxt {
+  color: #b1b492;
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+.mySkillTxt {
+  color: #000;
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 25px;
+}
+.skillDescription {
+  color: #999999;
+  font-weight: 600;
+  font-size: 16px;
+}
+.skillCardMain {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 0px 20px;
+}
+.skillCardInnerMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  gap: 20px;
+}
+
+.circularDiv {
+  height: 100px;
+}
+.hobbyInnerTxt {
+  font-size: 20px;
+  font-weight: 800;
 }

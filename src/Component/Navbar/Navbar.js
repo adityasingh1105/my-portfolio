@@ -26,7 +26,7 @@ export default function Navbar() {
       return (
         <div className="dropMenu">
           {navbarData.map((item) => (
-            <a href="test" className="navbarTxt">
+            <a href={item.hrefKey} className="navbarTxt" onClick={toggleMenu}>
               {item.title}
             </a>
           ))}

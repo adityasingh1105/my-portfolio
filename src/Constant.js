@@ -44,4 +44,41 @@ const hobbyData = [
   { id: 3, hobby: "Movie", hobbyImg: movieImg },
   { id: 4, hobby: "Camping", hobbyImg: campingImg },
 ];
-export { navbarData, Images, statsData, aboutData, hobbyData };
+const skillsData = [
+  {
+    id: 1,
+    skillTitle: "REACT",
+    lastweek: "10%",
+    lastMonth: "97%",
+    skillRate: 90,
+  },
+  {
+    id: 2,
+    skillTitle: "REACT-NATIVE",
+    lastweek: "10%",
+    lastMonth: "43%",
+    skillRate: 89,
+  },
+  {
+    id: 3,
+    skillTitle: "HTML",
+    lastweek: "10%",
+    lastMonth: "43%",
+    skillRate: 80,
+  },
+  {
+    id: 4,
+    skillTitle: "CSS",
+    lastweek: "10%",
+    lastMonth: "43%",
+    skillRate: 81,
+  },
+  {
+    id: 5,
+    skillTitle: "JavaScript",
+    lastweek: "10%",
+    lastMonth: "43%",
+    skillRate: 92,
+  },
+];
+export { navbarData, Images, statsData, aboutData, hobbyData, skillsData };
