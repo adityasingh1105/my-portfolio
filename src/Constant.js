@@ -81,4 +81,70 @@ const skillsData = [
     skillRate: 92,
   },
 ];
-export { navbarData, Images, statsData, aboutData, hobbyData, skillsData };
+const servicesData = [
+  {
+    id: 1,
+    serviceTitle: "Web Design",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 2,
+    serviceTitle: "Web Application",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 3,
+    serviceTitle: "Web Development",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 4,
+    serviceTitle: "Banner Design",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 5,
+    serviceTitle: "Branding",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 6,
+    serviceTitle: "Icon Design",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 7,
+    serviceTitle: "Graphic Design",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+  {
+    id: 8,
+    serviceTitle: "SEO",
+    serviceDescriptions:
+      "A small river named Duden flows by their place and supplies.",
+    serviceImg: musicImg,
+  },
+];
+export {
+  navbarData,
+  Images,
+  statsData,
+  aboutData,
+  hobbyData,
+  skillsData,
+  servicesData,
+};
