@@ -28,7 +28,6 @@ export default function Services() {
                 className="serviceImg"
               />
             </div>
-
             <p className="serviceTitle">{item.serviceTitle}</p>
             <p className="serviceDescriptionsTxt">{item.serviceDescriptions}</p>
           </Paper>
