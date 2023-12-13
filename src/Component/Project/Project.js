@@ -1,4 +1,4 @@
-import { Box, Button, Typography, styled } from "@material-ui/core";
+import { Box, Typography, styled } from "@material-ui/core";
 import React from "react";
 import { Images } from "../../Constant";
 
