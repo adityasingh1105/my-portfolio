@@ -1,7 +1,6 @@
 import React from "react";
 import "./Services.css";
 import { servicesData } from "../../Constant";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { Paper } from "@material-ui/core";
 
 export default function Services() {

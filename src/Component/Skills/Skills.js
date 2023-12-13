@@ -7,17 +7,6 @@ import "react-circular-progressbar/dist/styles.css";
 import Paper from "@material-ui/core/Paper";
 
 export default function Skills() {
-  const useStyles = makeStyles((theme) => ({
-    root: {
-      display: "flex",
-      flexWrap: "wrap",
-      "& > *": {
-        margin: theme.spacing(1),
-        width: theme.spacing(16),
-        height: theme.spacing(16),
-      },
-    },
-  }));
   const renderSkillUpper = () => {
     return (
       <div className="skillUpper">
