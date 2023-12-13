@@ -1,7 +1,6 @@
 import React from "react";
 import "./Skills.css";
 import { skillsData } from "../../Constant";
-import { makeStyles } from "@material-ui/core/styles";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import Paper from "@material-ui/core/Paper";
