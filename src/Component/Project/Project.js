@@ -8,11 +8,11 @@ export default function Project() {
       <MainBox>
         <Box>
           <ProjectTxt>Have a project on your mind.</ProjectTxt>
-          <Typography>
+          <ProjectTxtDescription>
             A small river named Duden flows by their place and supplies it with
             the necessary regelialia. It is a paradisematic country, in which
             roasted parts of sentences fly.
-          </Typography>
+          </ProjectTxtDescription>
           <ContactButton variant="contained" color="success">
             Contact Me
           </ContactButton>
@@ -57,5 +57,13 @@ const ContactButton = styled(Box)({
 });
 
 const ProjectTxt = styled(Typography)({
-  backgroundColor: "#fff",
+  color: "#fff",
+  fontWeight: 600,
+  fontSize: "30px",
+});
+
+const ProjectTxtDescription = styled(Typography)({
+  color: "#fff",
+  fontWeight: 500,
+  fontSize: "17px",
 });

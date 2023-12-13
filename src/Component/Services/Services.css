@@ -55,13 +55,11 @@
   & .serviceImgDiv{
     transition: all 0.3s ease-in-out;
     background-color:#b1b492 
-
   }
   &:hover {
     background-color: #b1b492 !important;
     .serviceImgDiv {
       background-color: #fff;
-      /* transition: background-color 0.3s, box-shadow 0.3s; */
       transform: translateX(30px);
     }
     .serviceTitle {
