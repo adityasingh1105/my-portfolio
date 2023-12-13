@@ -8,6 +8,7 @@ import campingImg from "../src/Assets/campingImg.png";
 import movieImg from "../src/Assets/movieImg.png";
 import musicImg from "../src/Assets/musicImg.png";
 import travelImg from "../src/Assets/travelImg.png";
+import projectImgUser from "../src/Assets/projectImgUser.png";
 
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
@@ -24,6 +25,7 @@ const Images = {
   clientImg: clientImg,
   projectImg: projectImg,
   aboutImg: aboutImg,
+  projectImgUser: projectImgUser,
 };
 const statsData = [
   { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 5 },

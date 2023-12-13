@@ -1,7 +1,6 @@
 import React from "react";
 import "./Services.css";
 import { servicesData } from "../../Constant";
-import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import { Paper } from "@material-ui/core";
 
 export default function Services() {
@@ -29,7 +28,6 @@ export default function Services() {
                 className="serviceImg"
               />
             </div>
-
             <p className="serviceTitle">{item.serviceTitle}</p>
             <p className="serviceDescriptionsTxt">{item.serviceDescriptions}</p>
           </Paper>
