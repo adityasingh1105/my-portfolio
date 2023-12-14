@@ -9,6 +9,7 @@ import movieImg from "../src/Assets/movieImg.png";
 import musicImg from "../src/Assets/musicImg.png";
 import travelImg from "../src/Assets/travelImg.png";
 import projectImgUser from "../src/Assets/projectImgUser.png";
+import projectOneImg from "../src/Assets/projectOneImg.png";
 
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
@@ -26,6 +27,7 @@ const Images = {
   projectImg: projectImg,
   aboutImg: aboutImg,
   projectImgUser: projectImgUser,
+  projectOneImg: projectOneImg,
 };
 const statsData = [
   { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 5 },
@@ -133,13 +135,12 @@ const servicesData = [
       "A small river named Duden flows by their place and supplies.",
     serviceImg: musicImg,
   },
-  {
-    id: 8,
-    serviceTitle: "SEO",
-    serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
-    serviceImg: musicImg,
-  },
+];
+const projectData = [
+  { id: 1, title: "PROJECT COMPLETE", img: Images.projectOneImg, numbers: 5 },
+  { id: 2, title: "HAPPY CLIENTS", img: Images.projectImg, numbers: 3 },
+  { id: 3, title: "CUPS OF COFFEE", img: Images.clientImg, numbers: 10 },
+  { id: 4, title: "YEARS EXPERIENCED", img: Images.projectImg, numbers: 3 },
 ];
 export {
   navbarData,
@@ -149,4 +150,5 @@ export {
   hobbyData,
   skillsData,
   servicesData,
+  projectData,
 };
