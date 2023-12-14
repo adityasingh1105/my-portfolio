@@ -51,8 +51,13 @@ export default function Project() {
           <InnerCardBox key={index}>
             <img
               src={item.img}
+              alt="ProejectImg"
               style={{ height: "100%", width: "100%", borderRadius: "7px" }}
             />
+            <InnerCardBoxHover className="InnerCardBoxHover">
+              <BrandingTxt>{item.description}</BrandingTxt>
+              <Typography>{item.title}</Typography>
+            </InnerCardBoxHover>
           </InnerCardBox>
         ))}
       </CardBox>
@@ -142,18 +147,37 @@ const CardBox = styled(Box)({
   gap: "30px",
   margin: "0px 30px",
   flexWrap: "wrap",
+  justifyContent: "center",
+});
+const BrandingTxt = styled(Typography)({
+  color: "#FFF",
+  fontWeight: 600,
+  fontSize: "25px",
+  wordWrap: "break-word",
+  textAlign: "center",
+});
+
+const InnerCardBoxHover = styled(Box)({
+  backgroundColor: "rgba(0, 0, 0, 0.3)",
+  position: "absolute",
+  height: "100%",
+  width: "100%",
+  top: 0,
+  display: "none",
+  padding: "25px",
+  boxSizing: "border-box",
+  borderRadius: "7px",
 });
 
 const InnerCardBox = styled(Box)({
-  // border: "1px solid red",
   width: "320px",
   height: "320px",
-  // borderRadius: "7px",
+  position: "relative",
   justifyContent: "center",
   transition: "transform 0.3s ease-in-out",
-  "&:hover": {
-    // borderColor: "red",
-    // transform: "scale(1.1)", // Scaling the card on hover
-    // boxShadow: "0px 0px 10px 0px rgba(0, 0, 0, 0.2)", // Adding a box-shadow on hover
+  "&:hover .InnerCardBoxHover": {
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
   },
 });
