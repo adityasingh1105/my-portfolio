@@ -1,7 +1,8 @@
 import { Box, Typography, styled } from "@material-ui/core";
 import React from "react";
 import { Images, projectData } from "../../Constant";
-
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function Project() {
   const renderServicesUpper = () => {
     return (
@@ -15,6 +16,7 @@ export default function Project() {
       </OurProjectBox>
     );
   };
+
   const renderContact = () => {
     return (
       <MainBox>
@@ -29,17 +31,6 @@ export default function Project() {
             Contact Me
           </ContactButton>
         </InnerBox>
-        <img
-          src={Images.projectImgUser}
-          alt="projectImgUser"
-          style={{
-            height: "270px",
-            width: "270px",
-            // position: "absolute",
-            // top: "30px",
-            // bottom:"30px"
-          }}
-        />
       </MainBox>
     );
   };
@@ -56,19 +47,77 @@ export default function Project() {
             />
             <InnerCardBoxHover className="InnerCardBoxHover">
               <BrandingTxt>{item.description}</BrandingTxt>
-              <Typography>{item.title}</Typography>
+              <TitleTxt style={{}}>{item.title}</TitleTxt>
             </InnerCardBoxHover>
           </InnerCardBox>
         ))}
       </CardBox>
     );
   };
+  const MyCarousel = () => {
+    return (
+      <Carousel autoPlay={true} showThumbs={true}>
+        <div
+          style={{
+            backgroundColor: "red",
+            height: "100px",
+            width: "100px",
+          }}
+        ></div>
+      </Carousel>
+    );
+  };
 
+  const Testimonies = () => {
+    return (
+      <Box
+        style={{
+          backgroundColor: "#B1B492",
+        }}
+      >
+        {TestimoniesUpperContent()}
+        <Carousel
+          autoPlay={true}
+          axis="horizontal"
+          centerMode={true}
+          interval={1000}
+          infiniteLoop
+          showArrows={false}
+          showThumbs={false}
+          showStatus={false}
+        >
+          {projectData.map((item, index) => (
+            <InnerCardBox key={index}>
+              <img
+                src={item.img}
+                alt="ProejectImg"
+                style={{ height: "100%", width: "100%", borderRadius: "7px" }}
+              />
+            </InnerCardBox>
+          ))}
+        </Carousel>
+      </Box>
+    );
+  };
+
+  const TestimoniesUpperContent = () => {
+    return (
+      <OurProjectBox>
+        <TestimoniesTxt>TESTIMONIES</TestimoniesTxt>
+        <ClientTxt className="myServicesTxt">What client says about?</ClientTxt>
+        <ClientTxtDescription>
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and Consonantia
+        </ClientTxtDescription>
+      </OurProjectBox>
+    );
+  };
   return (
     <Box id="Projects">
       {renderContact()}
       {renderServicesUpper()}
       {renderProjectCard()}
+      {Testimonies()}
     </Box>
   );
 }
@@ -120,6 +169,12 @@ const AccomplishmentTxt = styled(Typography)({
   fontSize: "15px",
   marginBottom: "15px",
 });
+const TestimoniesTxt = styled(Typography)({
+  color: "#fff",
+  fontWeight: 800,
+  fontSize: "15px",
+  marginBottom: "15px",
+});
 
 const OurProjectBox = styled(Box)({
   display: "flex",
@@ -135,20 +190,43 @@ const OurProjectTxtDescription = styled(Typography)({
   fontWeight: 600,
   fontSize: "16px",
 });
+const ClientTxtDescription = styled(Typography)({
+  color: "#ffff",
+  fontWeight: 600,
+  fontSize: "16px",
+});
 
+const ClientTxt = styled(Typography)({
+  color: "#fff",
+  fontWeight: 800,
+  fontSize: "35px",
+  marginBottom: "25px",
+});
 const OurProjectTxt = styled(Typography)({
   color: "#000",
   fontWeight: 800,
   fontSize: "35px",
   marginBottom: "25px",
 });
+
+const TitleTxt = styled(Typography)({
+  color: "#B7BA9C",
+  fontWeight: 600,
+  fontSize: "20px",
+  wordWrap: "break-word",
+  textAlign: "center",
+  marginTop: "10px",
+});
+
 const CardBox = styled(Box)({
   display: "flex",
   gap: "30px",
   margin: "0px 30px",
   flexWrap: "wrap",
   justifyContent: "center",
+  marginBottom: "60px",
 });
+
 const BrandingTxt = styled(Typography)({
   color: "#FFF",
   fontWeight: 600,

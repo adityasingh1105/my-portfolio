@@ -2,6 +2,7 @@
   background-color: #fff;
   padding: 100px 0px;
 }
+
 .servicesUpper {
   display: flex;
   justify-content: center;
@@ -10,28 +11,32 @@
   margin-bottom: 60px;
   padding: 0px 20px;
 }
+
 .servicesTxt {
   color: #b1b492;
   font-weight: 800;
   font-size: 15px;
   margin-bottom: 15px;
 }
+
 .myServicesTxt {
   color: #000;
   font-weight: 800;
   font-size: 35px;
   margin-bottom: 25px;
 }
+
 .servicesDescription {
   color: #999999;
   font-weight: 600;
   font-size: 16px;
 }
+
 .serviceCardInnerMain {
   display: flex;
   flex-direction: column;
-  width: 250px;
-  height: 100px;
+  max-width: 220px;
+  min-width: 220px;
   padding: 50px;
   position: relative;
 }
@@ -51,20 +56,25 @@
 
 .serviceCardInnerMain {
   transition: all 1s ease !important;
-    background-color: #fff !important;
-  & .serviceImgDiv{
+  background-color: #fff !important;
+
+  & .serviceImgDiv {
     transition: all 0.3s ease-in-out;
-    background-color:#b1b492 
+    background-color: #b1b492
   }
+
   &:hover {
     background-color: #b1b492 !important;
+
     .serviceImgDiv {
       background-color: #fff;
       transform: translateX(30px);
     }
+
     .serviceTitle {
       color: #fff;
     }
+
     .serviceDescriptionsTxt {
       color: #fff;
     }

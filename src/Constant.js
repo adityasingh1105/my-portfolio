@@ -157,7 +157,18 @@ const projectData = [
     img: Images.projectOneImg,
     title: "Web Design",
   },
- 
+  {
+    id: 2,
+    description: "Branding & Illustration Design",
+    img: Images.projectTwoImg,
+    title: "Web Design",
+  },
+  {
+    id: 3,
+    description: "Branding & Illustration Design",
+    img: Images.projectOneImg,
+    title: "Web Design",
+  },
 ];
 export {
   navbarData,

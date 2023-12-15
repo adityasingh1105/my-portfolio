@@ -6,6 +6,7 @@ import Services from "./Component/Services/Services";
 import Skills from "./Component/Skills/Skills";
 
 function App() {
+  alert("Wroking on responsive part");
   return (
     <>
       <Navbar />
@@ -14,7 +15,7 @@ function App() {
         <About />
         <Skills />
         <Services />
-        <Project/>
+        <Project />
       </>
     </>
   );
