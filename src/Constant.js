@@ -11,6 +11,7 @@ import travelImg from "../src/Assets/travelImg.png";
 import projectImgUser from "../src/Assets/projectImgUser.png";
 import projectOneImg from "../src/Assets/projectOneImg.png";
 import projectTwoImg from "../src/Assets/projectTwoImg.png";
+import quoteLeftImg from "../src/Assets/quoteLeftImg.png";
 
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
@@ -30,6 +31,7 @@ const Images = {
   projectImgUser: projectImgUser,
   projectOneImg: projectOneImg,
   projectTwoImg: projectTwoImg,
+  quoteLeftImg: quoteLeftImg,
 };
 const statsData = [
   { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 5 },
@@ -170,6 +172,43 @@ const projectData = [
     title: "Web Design",
   },
 ];
+const testimoniesData = [
+  {
+    id: 1,
+    description:
+      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+    img: Images.projectOneImg,
+    title: "Web Design",
+  },
+  {
+    id: 2,
+    description:
+      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+    img: Images.projectTwoImg,
+    title: "Web Design",
+  },
+  {
+    id: 3,
+    description:
+      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+    img: Images.projectOneImg,
+    title: "Web Design",
+  },
+  {
+    id: 2,
+    description:
+      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+    img: Images.projectTwoImg,
+    title: "Web Design",
+  },
+  {
+    id: 3,
+    description:
+      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+    img: Images.projectOneImg,
+    title: "Web Design",
+  },
+];
 export {
   navbarData,
   Images,
@@ -179,4 +218,5 @@ export {
   skillsData,
   servicesData,
   projectData,
+  testimoniesData,
 };

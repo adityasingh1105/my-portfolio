@@ -1,8 +1,9 @@
 import { Box, Typography, styled } from "@material-ui/core";
 import React from "react";
-import { Images, projectData } from "../../Constant";
-import { Carousel } from "react-responsive-carousel";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Images, projectData, testimoniesData } from "../../Constant";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function Project() {
   const renderServicesUpper = () => {
     return (
@@ -54,48 +55,40 @@ export default function Project() {
       </CardBox>
     );
   };
-  const MyCarousel = () => {
-    return (
-      <Carousel autoPlay={true} showThumbs={true}>
-        <div
-          style={{
-            backgroundColor: "red",
-            height: "100px",
-            width: "100px",
-          }}
-        ></div>
-      </Carousel>
-    );
-  };
 
   const Testimonies = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      mobileFirst: true,
+    };
     return (
       <Box
         style={{
           backgroundColor: "#B1B492",
+          padding: "90px",
         }}
       >
         {TestimoniesUpperContent()}
-        <Carousel
-          autoPlay={true}
-          axis="horizontal"
-          centerMode={true}
-          interval={1000}
-          infiniteLoop
-          showArrows={false}
-          showThumbs={false}
-          showStatus={false}
-        >
-          {projectData.map((item, index) => (
-            <InnerCardBox key={index}>
-              <img
-                src={item.img}
-                alt="ProejectImg"
-                style={{ height: "100%", width: "100%", borderRadius: "7px" }}
-              />
-            </InnerCardBox>
-          ))}
-        </Carousel>
+        <Box>
+          <SliderBox {...settings}>
+            {testimoniesData.map((item, index) => (
+              <InnerCardBox key={index}>
+                <Box style={{ display: "flex" }}>
+                  <img src={Images.quoteLeftImg} alt="ProejectImg" style={{}} />
+                  <Typography style={{ fontSize: "16px", color: "#9D9D9D" }}>
+                    {item.description}
+                  </Typography>
+                </Box>
+              </InnerCardBox>
+            ))}
+          </SliderBox>
+        </Box>
       </Box>
     );
   };
@@ -252,10 +245,21 @@ const InnerCardBox = styled(Box)({
   height: "320px",
   position: "relative",
   justifyContent: "center",
+  background: "#fff",
   transition: "transform 0.3s ease-in-out",
   "&:hover .InnerCardBoxHover": {
     display: "flex",
     justifyContent: "center",
     flexDirection: "column",
+  },
+});
+
+const SliderBox = styled(Slider)({
+  "& .slick-dots li button:before": {
+    border: " 2px solid #fff",
+    borderRadius: "100%",
+    lineHeight: "16px",
+    height: "15px",
+    width: "15px",
   },
 });

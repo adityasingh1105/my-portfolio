@@ -101,3 +101,15 @@
   border-radius: 50%;
   box-shadow: 0 0 5px #999999;
 }
+
+.carousel-img {
+  height: 22.813rem;
+}
+
+.app-carousel .dot {
+  background-color: gray !important;
+}
+
+.app-carousel .selected {
+  background-color: #073366 !important;
+}
