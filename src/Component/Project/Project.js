@@ -80,7 +80,7 @@ export default function Project() {
       mobileFirst: true,
       responsive: [
         {
-          breakpoint: 1000, 
+          breakpoint: 1000,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
@@ -120,6 +120,7 @@ export default function Project() {
                   style={{ marginTop: "20px", display: "flex", gap: "20px" }}
                 >
                   <img
+                    alt="clientImg"
                     src={item.clientImg}
                     style={{
                       height: "80px",
