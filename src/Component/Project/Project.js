@@ -146,7 +146,6 @@ export default function Project() {
       {renderServicesUpper()}
       {renderProjectCard()}
       {Testimonies()}
-      <Typography>{isMobile}</Typography>
     </Box>
   );
 }
