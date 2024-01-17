@@ -12,6 +12,9 @@ import projectImgUser from "../src/Assets/projectImgUser.png";
 import projectOneImg from "../src/Assets/projectOneImg.png";
 import projectTwoImg from "../src/Assets/projectTwoImg.png";
 import quoteLeftImg from "../src/Assets/quoteLeftImg.png";
+import clientOne from "../src/Assets/clientOne.png";
+import clientTwo from "../src/Assets/clientTwo.png";
+import clientThree from "../src/Assets/clientThree.png";
 
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
@@ -32,6 +35,9 @@ const Images = {
   projectOneImg: projectOneImg,
   projectTwoImg: projectTwoImg,
   quoteLeftImg: quoteLeftImg,
+  clientOne: clientOne,
+  clientTwo: clientTwo,
+  clientThree: clientThree,
 };
 const statsData = [
   { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 5 },
@@ -177,36 +183,84 @@ const testimoniesData = [
     id: 1,
     description:
       "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    img: Images.projectOneImg,
-    title: "Web Design",
+    clientImg: clientOne,
+    clientName: "Aditya",
+    clientPosition: "Web Design",
   },
   {
     id: 2,
     description:
       "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    img: Images.projectTwoImg,
-    title: "Web Design",
+    clientImg: clientTwo,
+    clientName: "Aditya",
+    clientPosition: "Web Design",
   },
   {
     id: 3,
     description:
       "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    img: Images.projectOneImg,
-    title: "Web Design",
+    clientImg: clientThree,
+    clientName: "Aditya",
+    clientPosition: "Marketing Manager",
   },
   {
     id: 2,
     description:
       "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    img: Images.projectTwoImg,
-    title: "Web Design",
+    clientImg: clientOne,
+    clientName: "Aditya",
+    clientPosition: "Web Design",
   },
   {
     id: 3,
     description:
       "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    img: Images.projectOneImg,
-    title: "Web Design",
+    clientImg: clientTwo,
+    clientName: "Aditya",
+    clientPosition: "Web Design",
+  },
+];
+const demoData = [
+  {
+    id: 1,
+    projectTitle: "Field Management Services hello worldworldworldworld",
+    projectOwner: "By Rahul jain",
+    date: "Oct 24, 2033",
+    serviceImg: musicImg,
+    price: 15,
+  },
+  {
+    id: 2,
+    projectTitle: "Field Management Services hello worldworldworldworld",
+    projectOwner: "By Rahul jain",
+    date: "Oct 24, 2033",
+    serviceImg: musicImg,
+    price: 12.21,
+  },
+  {
+    id: 3,
+    projectTitle: "Field Management Services hello worldworldworldworld",
+    projectOwner: "By Rahul jain",
+    date: "Oct 24, 2033",
+    serviceImg: musicImg,
+    price: 8,
+  },
+];
+const demoDataTwo = [
+  {
+    id: 1,
+    status: "Wrok in progress",
+    priceTxt: "$0.32",
+  },
+  {
+    id: 2,
+    status: "In review",
+    priceTxt: "$0.32",
+  },
+  {
+    id: 3,
+    status: "Pending",
+    priceTxt: "$0.32",
   },
 ];
 export {
@@ -219,4 +273,6 @@ export {
   servicesData,
   projectData,
   testimoniesData,
+  demoData,
+  demoDataTwo,
 };

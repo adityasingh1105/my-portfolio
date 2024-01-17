@@ -56,43 +56,6 @@ export default function Project() {
     );
   };
 
-  const Testimonies = () => {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 1000,
-      slidesToShow: 3,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      mobileFirst: true,
-    };
-    return (
-      <Box
-        style={{
-          backgroundColor: "#B1B492",
-          padding: "90px",
-        }}
-      >
-        {TestimoniesUpperContent()}
-        <Box>
-          <SliderBox {...settings}>
-            {testimoniesData.map((item, index) => (
-              <InnerCardBox key={index}>
-                <Box style={{ display: "flex" }}>
-                  <img src={Images.quoteLeftImg} alt="ProejectImg" style={{}} />
-                  <Typography style={{ fontSize: "16px", color: "#9D9D9D" }}>
-                    {item.description}
-                  </Typography>
-                </Box>
-              </InnerCardBox>
-            ))}
-          </SliderBox>
-        </Box>
-      </Box>
-    );
-  };
-
   const TestimoniesUpperContent = () => {
     return (
       <OurProjectBox>
@@ -105,12 +68,85 @@ export default function Project() {
       </OurProjectBox>
     );
   };
+  const Testimonies = () => {
+    const settings = {
+      dots: true,
+      infinite: true,
+      speed: 1000,
+      slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      mobileFirst: true,
+      responsive: [
+        {
+          breakpoint: 1000, 
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 850,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+          },
+        },
+      ],
+    };
+    return (
+      <TestimoniesMainBox>
+        {TestimoniesUpperContent()}
+        <Box>
+          <SliderBox {...settings}>
+            {testimoniesData.map((item, index) => (
+              <InnerCardBoxSlider>
+                <Box style={{ display: "flex", gap: "20px" }}>
+                  <img
+                    src={Images.quoteLeftImg}
+                    alt="ProejectImg"
+                    style={{ height: "30px", width: "30px" }}
+                  />
+                  <Typography style={{ fontSize: "18px", color: "#9D9D9D" }}>
+                    {item.description}
+                  </Typography>
+                </Box>
+                <Box
+                  style={{ marginTop: "20px", display: "flex", gap: "20px" }}
+                >
+                  <img
+                    src={item.clientImg}
+                    style={{
+                      height: "80px",
+                      widtyh: "80px",
+                      borderRadius: "100%",
+                    }}
+                  />
+                  <ClientBox>
+                    <ClientNameTxt>{item.clientName}</ClientNameTxt>
+                    <ClientPositionTxt>{item.clientPosition}</ClientPositionTxt>
+                  </ClientBox>
+                </Box>
+              </InnerCardBoxSlider>
+            ))}
+          </SliderBox>
+        </Box>
+      </TestimoniesMainBox>
+    );
+  };
+
   return (
     <Box id="Projects">
       {renderContact()}
       {renderServicesUpper()}
       {renderProjectCard()}
       {Testimonies()}
+      <Typography>{isMobile}</Typography>
     </Box>
   );
 }
@@ -162,6 +198,7 @@ const AccomplishmentTxt = styled(Typography)({
   fontSize: "15px",
   marginBottom: "15px",
 });
+
 const TestimoniesTxt = styled(Typography)({
   color: "#fff",
   fontWeight: 800,
@@ -183,6 +220,7 @@ const OurProjectTxtDescription = styled(Typography)({
   fontWeight: 600,
   fontSize: "16px",
 });
+
 const ClientTxtDescription = styled(Typography)({
   color: "#ffff",
   fontWeight: 600,
@@ -195,6 +233,7 @@ const ClientTxt = styled(Typography)({
   fontSize: "35px",
   marginBottom: "25px",
 });
+
 const OurProjectTxt = styled(Typography)({
   color: "#000",
   fontWeight: 800,
@@ -254,6 +293,16 @@ const InnerCardBox = styled(Box)({
   },
 });
 
+const InnerCardBoxSlider = styled(Box)({
+  background: "#fff",
+  borderRadius: "5px",
+  padding: "20px",
+  boxSizing: "border-box",
+  display: "flex",
+  gap: "20px",
+  width: "95% !important",
+});
+
 const SliderBox = styled(Slider)({
   "& .slick-dots li button:before": {
     border: " 2px solid #fff",
@@ -261,5 +310,27 @@ const SliderBox = styled(Slider)({
     lineHeight: "16px",
     height: "15px",
     width: "15px",
+  },
+});
+
+const ClientNameTxt = styled(Typography)({
+  fontSize: "20px",
+  fontWeight: 600,
+  color: "#000",
+});
+const ClientPositionTxt = styled(Typography)({
+  fontSize: "15px",
+  color: "#B3B3B3",
+});
+const ClientBox = styled(Box)({
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
+});
+const TestimoniesMainBox = styled(Box)({
+  backgroundColor: "#B1B492",
+  padding: "90px 190px",
+  "@media (max-width: 1000px)": {
+    padding: "90px 100px",
   },
 });

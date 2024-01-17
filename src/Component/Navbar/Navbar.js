@@ -42,7 +42,7 @@ export default function Navbar() {
   const renderMenu = () => {
     return (
       <div className="containerNavbar" ref={navbarRef}>
-        <div className="logoTxt">ADITYA</div>
+        <div className="logoTxt">ADITYA.  </div>
         <div className="innerTxtdiv">
           {navbarData.map((item) => (
             <a href={item.hrefKey} className="navbarTxt">
