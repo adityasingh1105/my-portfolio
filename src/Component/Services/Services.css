@@ -113,3 +113,9 @@
 .app-carousel .selected {
   background-color: #073366 !important;
 }
+
+@media screen and (max-width: 500px) {
+  .serviceCardInnerMain {
+    padding: 40px;
+  }
+}

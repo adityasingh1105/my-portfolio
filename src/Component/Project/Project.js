@@ -158,6 +158,12 @@ const MainBox = styled(Box)({
   flexDirection: "row",
   position: "relative",
   padding: "0px 90px",
+  "@media (max-width: 1000px)": {
+    padding: "20px 50",
+  },
+  "@media (max-width: 500px)": {
+    padding: "20px 30px",
+  },
 });
 
 const ContactButton = styled(Box)({
@@ -311,6 +317,9 @@ const SliderBox = styled(Slider)({
     height: "15px",
     width: "15px",
   },
+  "& .slick-dots": {
+    position: "relative",
+  },
 });
 
 const ClientNameTxt = styled(Typography)({
@@ -329,8 +338,11 @@ const ClientBox = styled(Box)({
 });
 const TestimoniesMainBox = styled(Box)({
   backgroundColor: "#B1B492",
-  padding: "90px 190px",
+  padding: "30px 190px 90px 190px",
   "@media (max-width: 1000px)": {
-    padding: "90px 100px",
+    padding: "30px 100px 90px 100px",
+  },
+  "@media (max-width: 500px)": {
+    padding: "30px 30px 90px 30px",
   },
 });

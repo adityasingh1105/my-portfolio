@@ -1,4 +1,5 @@
 import About from "./Component/About/About";
+import ContactUs from "./Component/ContactUs/ContactUs";
 import Herosection from "./Component/Herosection/Herosection";
 import Navbar from "./Component/Navbar/Navbar";
 import Project from "./Component/Project/Project";
@@ -16,6 +17,7 @@ function App() {
         <Skills />
         <Services />
         <Project />
+        <ContactUs />
       </>
     </>
   );
