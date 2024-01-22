@@ -159,10 +159,10 @@ const MainBox = styled(Box)({
   position: "relative",
   padding: "0px 90px",
   "@media (max-width: 1000px)": {
-    padding: "20px 50",
+    padding: "20px 20px",
   },
   "@media (max-width: 500px)": {
-    padding: "20px 30px",
+    padding: "20px 20px",
   },
 });
 
@@ -340,9 +340,6 @@ const TestimoniesMainBox = styled(Box)({
   backgroundColor: "#B1B492",
   padding: "30px 190px 90px 190px",
   "@media (max-width: 1000px)": {
-    padding: "30px 100px 90px 100px",
-  },
-  "@media (max-width: 500px)": {
-    padding: "30px 30px 90px 30px",
+    padding: "30px 20px 90px 20px",
   },
 });

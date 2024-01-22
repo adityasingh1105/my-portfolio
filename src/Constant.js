@@ -15,6 +15,9 @@ import quoteLeftImg from "../src/Assets/quoteLeftImg.png";
 import clientOne from "../src/Assets/clientOne.png";
 import clientTwo from "../src/Assets/clientTwo.png";
 import clientThree from "../src/Assets/clientThree.png";
+import phoneImg from "../src/Assets/phoneImg.gif";
+import locationImg from "../src/Assets/locationImg.gif";
+import emailImg from "../src/Assets/emailImg.gif";
 
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
@@ -38,6 +41,9 @@ const Images = {
   clientOne: clientOne,
   clientTwo: clientTwo,
   clientThree: clientThree,
+  phoneImg: phoneImg,
+  locationImg: locationImg,
+  emailImg: emailImg,
 };
 const statsData = [
   { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 5 },
