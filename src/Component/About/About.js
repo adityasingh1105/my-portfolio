@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Images, aboutData, hobbyData } from "../../Constant";
+import { Typography } from "@material-ui/core";
 
 export default function About() {
   const handleCallButtonClick = (item) => {
@@ -40,7 +41,7 @@ export default function About() {
             <div className="hobbyCircleDiv">
               <img src={item.hobbyImg} alt={item.title} className="hobbyImg" />
             </div>
-            <p>{item.hobby}</p>
+            <p style={{ fontSize: "15px", fontWeight: "bold" }}>{item.hobby}</p>
           </div>
         ))}
       </div>

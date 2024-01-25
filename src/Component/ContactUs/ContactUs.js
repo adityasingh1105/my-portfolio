@@ -3,6 +3,12 @@ import React from "react";
 import { Images } from "../../Constant";
 
 export default function ContactUs() {
+  const handleEmailClick = () => {
+    alert("gefd");
+    const email = "adi@gmail.com";
+    const emailAddress = `mailto:${email}`;
+    window.location.href = emailAddress;
+  };
   const TestimoniesUpperContent = () => {
     return (
       <ContactUsMainBox>
@@ -47,21 +53,33 @@ export default function ContactUs() {
           <DetailsImg src={Images.phoneImg} />
           <TxtBox>
             <AddressHeading>Phone.</AddressHeading>
-            <AddressTxt>9144774111</AddressTxt>
+            <AddressTxt
+              onClick={() => {
+                window.location.href = `tel:${9144774111}`;
+              }}
+            >
+              +91-9144774111
+            </AddressTxt>
           </TxtBox>
         </DetailsBox>
         <DetailsBox>
           <DetailsImg src={Images.emailImg} />
           <TxtBox>
-            <AddressHeading>Email.</AddressHeading>
-            <AddressTxt>aditya@aditya.com</AddressTxt>
+            <AddressHeading
+              onClick={() => {
+                handleEmailClick();
+              }}
+            >
+              Email.
+            </AddressHeading>
+            <AddressTxt>adisadis1234@gmail.com</AddressTxt>
           </TxtBox>
         </DetailsBox>
       </DetailMainBox>
     );
   };
   return (
-    <Box id="Contact">
+    <Box id="Contact" style={{}}>
       {TestimoniesUpperContent()}
       {renderFormBlock()}
     </Box>
@@ -118,7 +136,7 @@ const InputMultiField = styled(TextField)({
   padding: "10px",
   marginBottom: "20px",
   width: "100%",
-  height: "200px",
+  height: "100px",
   boxSizing: "border-box",
   borderRadius: "2px",
   overflowY: "auto",
@@ -136,8 +154,7 @@ const InputMultiField = styled(TextField)({
 });
 
 const ContactUsMainBox = styled(Box)({
-  backgroundColor: "#fff",
-  padding: "90px 190px",
+  padding: "20px 190px",
   "@media (max-width: 1000px)": {
     padding: "30px 20px 0px 20px",
   },
@@ -158,7 +175,8 @@ const AddressHeading = styled(Typography)({
   marginBottom: "3px",
 });
 const AddressTxt = styled(Typography)({
-  color: "#B1B492",
+  color: "#999999",
+  cursor: "pointer",
 });
 const DetailsBox = styled(Box)({
   display: "flex",
@@ -187,11 +205,10 @@ const InputBox = styled(Box)({
 });
 const FormMainBox = styled(Box)({
   background: "#F8F9FA",
-  maxWidth: "600px",
   padding: "40px",
   borderRadius: "5px",
   "@media (max-width: 500px)": {
-    padding: "0px 20px",
+    padding: "20px",
   },
 });
 const DetailsImg = styled("img")({
@@ -201,6 +218,9 @@ const DetailsImg = styled("img")({
 });
 const DetailMainBox = styled(Box)({
   margin: "0px 20px",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "space-evenly",
   "@media (max-width: 1000px)": {
     margin: "20px 0px",
   },

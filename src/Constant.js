@@ -18,6 +18,12 @@ import clientThree from "../src/Assets/clientThree.png";
 import phoneImg from "../src/Assets/phoneImg.gif";
 import locationImg from "../src/Assets/locationImg.gif";
 import emailImg from "../src/Assets/emailImg.gif";
+import achivementImg from "../src/Assets/achivementImg.png";
+import experienceImg from "../src/Assets/experienceImg.png";
+//Social Media Img
+import fbImg from "../src/Assets/fbImg.png";
+import instagramImg from "../src/Assets/instagramImg.png";
+import linkedinImg from "../src/Assets/linkedinImg.png";
 
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
@@ -25,8 +31,7 @@ const navbarData = [
   { id: 3, title: "SKILLS", hrefKey: "#Skills" },
   { id: 4, title: "SERVICES", hrefKey: "#Services" },
   { id: 5, title: "PROJECT", hrefKey: "#Projects" },
-  { id: 6, title: "BLOG", hrefKey: "#Blog" },
-  { id: 7, title: "CONTACT", hrefKey: "#Contact" },
+  { id: 6, title: "CONTACT", hrefKey: "#Contact" },
 ];
 const Images = {
   backgroundImg1: backgroundImg1,
@@ -44,18 +49,28 @@ const Images = {
   phoneImg: phoneImg,
   locationImg: locationImg,
   emailImg: emailImg,
+  achivementImg: achivementImg,
+  experienceImg: experienceImg,
+  fbImg: fbImg,
+  instagramImg: instagramImg,
+  linkedinImg: linkedinImg,
 };
 const statsData = [
-  { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 5 },
+  { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 3 },
   { id: 2, title: "HAPPY CLIENTS", img: Images.projectImg, numbers: 3 },
-  { id: 3, title: "CUPS OF COFFEE", img: Images.clientImg, numbers: 10 },
-  { id: 4, title: "YEARS EXPERIENCED", img: Images.projectImg, numbers: 3 },
+  { id: 3, title: "CUPS OF COFFEE", img: Images.achivementImg, numbers: 1 },
+  {
+    id: 4,
+    title: "YEARS EXPERIENCED",
+    img: Images.experienceImg,
+    numbers: 2.5,
+  },
 ];
 const aboutData = [
   { id: 1, titleKey: "Name:", titleValue: "Aditya Singh" },
   { id: 2, titleKey: "Date of birth:", titleValue: "May 11, 1998" },
   { id: 3, titleKey: "Address:", titleValue: "Jabalpur India" },
-  { id: 4, titleKey: "Email:", titleValue: "aditya@gmail.com" },
+  { id: 4, titleKey: "Email:", titleValue: "adisadis1234@gmail.com" },
   { id: 5, titleKey: "Phone:", titleValue: "+91-9144774111" },
 ];
 const hobbyData = [
