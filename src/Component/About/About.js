@@ -1,7 +1,7 @@
 import React from "react";
 import "./About.css";
 import { Images, aboutData, hobbyData } from "../../Constant";
-import { Typography } from "@material-ui/core";
+
 
 export default function About() {
   const handleCallButtonClick = (item) => {
