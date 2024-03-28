@@ -12,12 +12,13 @@ export default function Skills() {
         <p className="skillTxt">SKILLS</p>
         <p className="mySkillTxt">My Skills</p>
         <p className="skillDescription">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia
+          Proficient in building dynamic user interfaces with React.js, adept at
+          optimizing code for performance and scalability.
         </p>
       </div>
     );
   };
+
   const renderSkillCard = () => {
     return (
       <div className="skillCardMain">

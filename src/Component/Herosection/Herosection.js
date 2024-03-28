@@ -59,7 +59,7 @@ function Herosection(props) {
       <div className="centerMainBox">
         <div className="headingLabel">I DESIGN & BUILD BRANDS</div>
         <div className="introLabel">
-        Hi, I am <span className="nameSpan">Aditya</span>  
+          Hi, I am <span className="nameSpan">Aditya</span>
           <br /> my favourite work.
         </div>
         <Button variant="contained" color="success" className={classes.hireBtn}>

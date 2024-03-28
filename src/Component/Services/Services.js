@@ -10,8 +10,8 @@ export default function Services() {
         <p className="servicesTxt">I AM GRAT AT</p>
         <p className="myServicesTxt">We do awesome services for our clients</p>
         <p className="servicesDescription">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been
         </p>
       </div>
     );

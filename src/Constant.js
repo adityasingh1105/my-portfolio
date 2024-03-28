@@ -63,7 +63,7 @@ const statsData = [
     id: 4,
     title: "YEARS EXPERIENCED",
     img: Images.experienceImg,
-    numbers: 2.5,
+    numbers: new Date().getFullYear() - 2021,
   },
 ];
 const aboutData = [
@@ -170,75 +170,92 @@ const servicesData = [
 const projectData = [
   {
     id: 1,
-    description: "Branding & Illustration Design",
+    title: "Sanatandhram",
+    description: "Application design for Sanatandhram.",
     img: Images.projectOneImg,
-    title: "Web Design",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    client: "Sanatandhram Organization",
+    completionDate: "2023-05-15",
+    testimonials: [
+      "Great job on the website design! Very professional.",
+      "Easy to navigate and visually appealing.",
+    ],
   },
   {
     id: 2,
-    description: "Branding & Illustration Design",
+    title: "Design Process",
+    description: "Website development for Design Process.",
     img: Images.projectTwoImg,
-    title: "Web Design",
+    technologies: ["React Native", "Firebase"],
+    client: "Design Process Inc.",
+    completionDate: "2023-08-20",
+    testimonials: [
+      "The mobile app exceeded our expectations! Highly recommended.",
+      "Smooth user experience and intuitive design.",
+    ],
   },
   {
     id: 3,
-    description: "Branding & Illustration Design",
+    title: "New Staff Onboarding",
+    description: "Website Design for New Staff Onboarding.",
     img: Images.projectOneImg,
-    title: "Web Design",
-  },
-  {
-    id: 2,
-    description: "Branding & Illustration Design",
-    img: Images.projectTwoImg,
-    title: "Web Design",
-  },
-  {
-    id: 3,
-    description: "Branding & Illustration Design",
-    img: Images.projectOneImg,
-    title: "Web Design",
+    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    client: "ABC Company",
+    completionDate: "2022-12-10",
+    testimonials: [
+      "The branding and illustrations perfectly capture our company's identity. Amazing work!",
+    ],
   },
 ];
+
 const testimoniesData = [
   {
     id: 1,
     description:
-      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+      "Great job on the website design! Very professional. Easy to navigate and visually appealing.",
     clientImg: clientOne,
-    clientName: "Aditya",
-    clientPosition: "Web Design",
+    clientName: "John",
+    clientPosition: "Sanatandhram",
   },
   {
     id: 2,
     description:
-      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+      "The mobile app exceeded our expectations! Highly recommended. Excellent Work!",
     clientImg: clientTwo,
-    clientName: "Aditya",
-    clientPosition: "Web Design",
+    clientName: "Jame",
+    clientPosition: "Design Process",
   },
   {
     id: 3,
     description:
-      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
+      "The branding and illustrations perfectly capture our company's identity. Amazing work!",
     clientImg: clientThree,
-    clientName: "Aditya",
+    clientName: "Honey",
     clientPosition: "Marketing Manager",
   },
   {
+    id: 1,
+    description:
+      "Great job on the website design! Very professional. Easy to navigate and visually appealing.",
+    clientImg: clientOne,
+    clientName: "John",
+    clientPosition: "Sanatandhram",
+  },
+  {
     id: 2,
     description:
-      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    clientImg: clientOne,
-    clientName: "Aditya",
-    clientPosition: "Web Design",
+      "The mobile app exceeded our expectations! Highly recommended. Excellent Work!",
+    clientImg: clientTwo,
+    clientName: "Jame",
+    clientPosition: "Design Process",
   },
   {
     id: 3,
     description:
-      "Far far away, behind the word nountains, far from the countries Vokalia and Consonantia, there live the blind rexts.",
-    clientImg: clientTwo,
-    clientName: "Aditya",
-    clientPosition: "Web Design",
+      "The branding and illustrations perfectly capture our company's identity. Amazing work!",
+    clientImg: clientThree,
+    clientName: "Honey",
+    clientPosition: "Marketing Manager",
   },
 ];
 const demoData = [

@@ -16,8 +16,8 @@ export default function ContactUs() {
           <ContactUsTxt>CONTACT US</ContactUsTxt>
           <ProjectTx className="myServicesTxt">Have a Project?</ProjectTx>
           <ProjectTxDescription>
-            Far far away, behind the word mountains, far from the countries
-            Vokalia and Consonantia
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been
           </ProjectTxDescription>
         </OurProjectBox>
       </ContactUsMainBox>

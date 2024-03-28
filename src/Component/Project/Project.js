@@ -11,8 +11,8 @@ export default function Project() {
         <AccomplishmentTxt>ACCOMPLISHMENTS</AccomplishmentTxt>
         <OurProjectTxt className="myServicesTxt">Our Projects</OurProjectTxt>
         <OurProjectTxtDescription className="servicesDescription">
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been
         </OurProjectTxtDescription>
       </OurProjectBox>
     );
@@ -62,8 +62,8 @@ export default function Project() {
         <TestimoniesTxt>TESTIMONIES</TestimoniesTxt>
         <ClientTxt className="myServicesTxt">What client says about?</ClientTxt>
         <ClientTxtDescription>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been
         </ClientTxtDescription>
       </OurProjectBox>
     );

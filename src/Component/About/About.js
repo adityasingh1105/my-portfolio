@@ -2,7 +2,6 @@ import React from "react";
 import "./About.css";
 import { Images, aboutData, hobbyData } from "../../Constant";
 
-
 export default function About() {
   const handleCallButtonClick = (item) => {
     if (item.id === 5) {
@@ -21,9 +20,10 @@ export default function About() {
             <p className="introTxt">MY INTRO</p>
             <p className="aboutTxt">About Me</p>
             <p className="aboutDescription">
-              A small river named Duden flows by their place and supplies it
-              with the necessary regelialia. It is a paradisematic country, in
-              which roasted parts of sentences fly into your mouth.
+              Software engineer with a passion for problem-solving and
+              innovation. Proficient in multiple programming languages and
+              technologies, with expertise in React and React Native. Dedicated to writing clean, efficient code and
+              delivering high-quality software solutions.
             </p>
           </div>
           {renderDetails()}
