@@ -8,7 +8,7 @@ export default function Services() {
     return (
       <div className="servicesUpper">
         <p className="servicesTxt">I AM GRAT AT</p>
-        <p className="myServicesTxt">We do awesome services for our clients</p>
+        <p className="myServicesTxt">I do awesome services for our clients</p>
         <p className="servicesDescription">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been
@@ -16,7 +16,7 @@ export default function Services() {
       </div>
     );
   };
-  
+
   const renderServicesCard = () => {
     return (
       <div className="serviceCardMainDiv">

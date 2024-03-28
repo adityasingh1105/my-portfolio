@@ -9,7 +9,7 @@ export default function Project() {
     return (
       <OurProjectBox>
         <AccomplishmentTxt>ACCOMPLISHMENTS</AccomplishmentTxt>
-        <OurProjectTxt className="myServicesTxt">Our Projects</OurProjectTxt>
+        <OurProjectTxt className="myServicesTxt">My Projects</OurProjectTxt>
         <OurProjectTxtDescription className="servicesDescription">
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been

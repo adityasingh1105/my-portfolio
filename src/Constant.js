@@ -121,49 +121,49 @@ const servicesData = [
     id: 1,
     serviceTitle: "Web Design",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
   {
     id: 2,
-    serviceTitle: "Web Application",
+    serviceTitle: "Mobile Application",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
   {
     id: 3,
-    serviceTitle: "Web Development",
+    serviceTitle: "Figma designs",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
   {
     id: 4,
     serviceTitle: "Banner Design",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
   {
     id: 5,
     serviceTitle: "Branding",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
   {
     id: 6,
     serviceTitle: "Icon Design",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
   {
     id: 7,
     serviceTitle: "Graphic Design",
     serviceDescriptions:
-      "A small river named Duden flows by their place and supplies.",
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     serviceImg: musicImg,
   },
 ];
