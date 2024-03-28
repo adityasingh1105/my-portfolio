@@ -16,6 +16,7 @@ export default function Services() {
       </div>
     );
   };
+  
   const renderServicesCard = () => {
     return (
       <div className="serviceCardMainDiv">
