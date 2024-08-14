@@ -13,7 +13,7 @@ export default function About() {
     return (
       <div className="aboutInnerMainDiv">
         <div className="innerFirstDiv">
-          <img src={Images.aboutImg} className="aboutImg" alt="AboutImg" />
+          <img src={Images.mypicture1} className="aboutImg" alt="AboutImg" />
         </div>
         <div className="innerSecondDiv">
           <div>
@@ -22,8 +22,9 @@ export default function About() {
             <p className="aboutDescription">
               Software engineer with a passion for problem-solving and
               innovation. Proficient in multiple programming languages and
-              technologies, with expertise in React and React Native. Dedicated to writing clean, efficient code and
-              delivering high-quality software solutions.
+              technologies, with expertise in React and React Native. Dedicated
+              to writing clean, efficient code and delivering high-quality
+              software solutions.
             </p>
           </div>
           {renderDetails()}

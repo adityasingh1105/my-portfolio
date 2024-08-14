@@ -3,6 +3,7 @@ import backgroundImg2 from "../src/Assets/backgroundImg2.png";
 import clientImg from "../src/Assets/clientImg.png";
 import projectImg from "../src/Assets/projectImg.png";
 import aboutImg from "../src/Assets/aboutImg.png";
+import mypicture1 from "../src/Assets/mypicture1.png";
 
 import campingImg from "../src/Assets/campingImg.png";
 import movieImg from "../src/Assets/movieImg.png";
@@ -39,6 +40,7 @@ const Images = {
   clientImg: clientImg,
   projectImg: projectImg,
   aboutImg: aboutImg,
+  mypicture1: mypicture1,
   projectImgUser: projectImgUser,
   projectOneImg: projectOneImg,
   projectTwoImg: projectTwoImg,
