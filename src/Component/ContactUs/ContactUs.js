@@ -2,7 +2,7 @@ import { Box, Button, Snackbar, TextField, Typography, styled } from "@material-
 import React, { useRef, useState } from "react";
 import { Images } from "../../Constant";
 import * as Yup from 'yup';
-import { ErrorMessage, Form, Formik } from "formik";
+import { Form, Formik } from "formik";
 import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
