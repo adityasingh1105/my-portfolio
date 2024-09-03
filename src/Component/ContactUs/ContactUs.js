@@ -1,14 +1,36 @@
-import { Box, Button, TextField, Typography, styled } from "@material-ui/core";
-import React from "react";
+import { Box, Button, Snackbar, TextField, Typography, styled } from "@material-ui/core";
+import React, { useRef, useState } from "react";
 import { Images } from "../../Constant";
+import * as Yup from 'yup';
+import { ErrorMessage, Form, Formik } from "formik";
+import emailjs from "@emailjs/browser";
 
 export default function ContactUs() {
+  const formRef = useRef();
+  const [alert, setalert] = useState(false)
+
   const handleEmailClick = () => {
-    alert("gefd");
-    const email = "adi@gmail.com";
-    const emailAddress = `mailto:${email}`;
-    window.location.href = emailAddress;
+    emailjs
+      .sendForm(
+        "service_p24iox8",
+        "template_6zeivme",
+        formRef.current,
+        "LsXYqumo3OGci1w7J"
+      )
+      .then(
+        (result) => {
+          setalert(!alert)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+
+  const handleClose = () => {
+    setalert(!alert)
+  };
+
   const TestimoniesUpperContent = () => {
     return (
       <ContactUsMainBox>
@@ -23,22 +45,82 @@ export default function ContactUs() {
       </ContactUsMainBox>
     );
   };
+
+  const validationSchema = Yup.object({
+    from_name: Yup.string().required('Name is required'),
+    email: Yup.string().email('Invalid email address').required('Email is required'),
+    subject: Yup.string().required('Subject is required'),
+    message: Yup.string().required('Message is required'),
+  });
+
   const renderFormBlock = () => {
     return (
       <MainBox>
         <FormMainBox>
-          <InputBox>
-            <InputField placeholder="Your Name" />
-            <InputField placeholder="Your Email" />
-          </InputBox>
-          <InputField placeholder="Subject" />
-          <InputMultiField multiline placeholder="Message" />
-          <SaveButton>Send Message</SaveButton>
+          <Formik
+            initialValues={{ from_name: '', email: '', subject: '', message: '' }}
+            validationSchema={validationSchema}
+            validateOnChange={true}  // Enable validation on field change
+            validateOnBlur={true}    // Enable validation on field blur
+            onSubmit={(values, { setSubmitting, resetForm }) => {
+              console.log(values);
+              setSubmitting(false);
+              handleEmailClick();
+              resetForm();
+            }}
+          >
+            {({ errors, touched, handleChange, handleBlur }) => (
+              <Form ref={formRef}>
+                <InputBox>
+                  <Box className="bottomBox">
+                    <InputField
+                      name="from_name"
+                      placeholder="Your Name"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {touched.name && errors.name && <Box>{errors.name}</Box>}
+                  </Box>
+                  <Box className="bottomBox">
+                    <InputField
+                      name="email"
+                      placeholder="Your Email"
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                    />
+                    {touched.email && errors.email && <Box className="errorBox" >{errors.email}</Box>}
+                  </Box>
+                </InputBox>
+
+                <Box className="bottomBox">
+                  <InputField
+                    name="subject"
+                    placeholder="Subject"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.subject && errors.subject && <Box>{errors.subject}</Box>}
+                </Box>
+                <Box className="bottomBox">
+                  <InputMultiField
+                    name="message"
+                    as="textarea"
+                    placeholder="Message"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                  />
+                  {touched.message && errors.message && <Box>{errors.message}</Box>}
+                </Box>
+                <SaveButton type="submit">Send Message</SaveButton>
+              </Form>
+            )}
+          </Formik>
         </FormMainBox>
         {renderDetails()}
       </MainBox>
     );
   };
+
   const renderDetails = () => {
     return (
       <DetailMainBox>
@@ -78,10 +160,18 @@ export default function ContactUs() {
       </DetailMainBox>
     );
   };
+
   return (
-    <Box id="Contact" style={{}}>
+    <Box id="Contact">
       {TestimoniesUpperContent()}
       {renderFormBlock()}
+      <Snackbar
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+        open={alert}
+        onClose={handleClose}
+        autoHideDuration={3000}
+        message="Your message has been sent successfully!"
+      />
     </Box>
   );
 }
@@ -115,10 +205,10 @@ const ProjectTxDescription = styled(Typography)({
 const InputField = styled(TextField)({
   border: "2px solid #B1B492",
   padding: "10px",
-  marginBottom: "20px",
   width: "100%",
   borderRadius: "2px",
   boxSizing: "border-box",
+  marginBottom: "10px",
   "& .MuiInput-root": {
     "&:focus": {
       outline: "none",
@@ -130,6 +220,10 @@ const InputField = styled(TextField)({
       content: "none",
     },
   },
+  "& .errorBox": {
+    marginBottom: "10px",
+    backgroundColor: "red"
+  }
 });
 const InputMultiField = styled(TextField)({
   border: "2px solid #B1B492",
@@ -210,6 +304,9 @@ const FormMainBox = styled(Box)({
   "@media (max-width: 500px)": {
     padding: "20px",
   },
+  "& .bottomBox": {
+    margin: "0px 0px 10px 0px"
+  }
 });
 const DetailsImg = styled("img")({
   objectFit: "contain",

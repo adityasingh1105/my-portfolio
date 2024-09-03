@@ -76,11 +76,12 @@ const aboutData = [
   { id: 5, titleKey: "Phone:", titleValue: "+91-9144774111" },
 ];
 const hobbyData = [
-  { id: 1, hobby: "Music", hobbyImg: musicImg },
-  { id: 2, hobby: "Travel", hobbyImg: travelImg },
-  { id: 3, hobby: "Movie", hobbyImg: movieImg },
-  { id: 4, hobby: "Camping", hobbyImg: campingImg },
+  { id: 1, hobby: "Camping", hobbyImg: campingImg },
+  { id: 2, hobby: "Listing Music", hobbyImg: musicImg },
+  { id: 3, hobby: "Traveling", hobbyImg: travelImg },
+  { id: 4, hobby: "Watching Movies", hobbyImg: movieImg },
 ];
+
 const skillsData = [
   {
     id: 1,
