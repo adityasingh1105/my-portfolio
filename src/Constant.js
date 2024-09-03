@@ -110,6 +110,7 @@ const skillsData = [
     skillRate: 82,
   },
 ];
+
 const servicesData = [
   {
     id: 1,
