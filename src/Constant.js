@@ -25,7 +25,13 @@ import experienceImg from "../src/Assets/experienceImg.png";
 import fbImg from "../src/Assets/fbImg.png";
 import instagramImg from "../src/Assets/instagramImg.png";
 import linkedinImg from "../src/Assets/linkedinImg.png";
-
+//Serive
+import webImg from "../src/Assets/webImg.png";
+import seoImg from "../src/Assets/seoImg.png";
+import mobileImg from "../src/Assets/mobileImg.png";
+import figmaImg from "../src/Assets/figmaImg.png";
+import graphicImg from "../src/Assets/graphicImg.png";
+import bannerImg from "../src/Assets/bannerImg.png";
 const navbarData = [
   { id: 1, title: "HOME", hrefKey: "#Home" },
   { id: 2, title: "ABOUT", hrefKey: "#About" },
@@ -56,6 +62,12 @@ const Images = {
   fbImg: fbImg,
   instagramImg: instagramImg,
   linkedinImg: linkedinImg,
+  graphicImg,
+  figmaImg,
+  mobileImg,
+  seoImg,
+  webImg,
+  bannerImg,
 };
 const statsData = [
   { id: 1, title: "PROJECT COMPLETE", img: Images.clientImg, numbers: 3 },
@@ -114,54 +126,48 @@ const skillsData = [
 const servicesData = [
   {
     id: 1,
-    serviceTitle: "Web Design",
+    serviceTitle: "Website Development",
     serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
+      "We create responsive and visually appealing websites tailored to your business needs, ensuring a seamless user experience across all devices.",
+    serviceImg: webImg,
   },
   {
     id: 2,
-    serviceTitle: "Mobile Application",
+    serviceTitle: "Mobile Application Development",
     serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
+      "Our team develops custom mobile applications for both iOS and Android platforms, focusing on performance, security, and user engagement.",
+    serviceImg: mobileImg,
   },
   {
     id: 3,
-    serviceTitle: "Figma designs",
+    serviceTitle: "Figma Designs",
     serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
+      "We design intuitive and user-friendly interfaces using Figma, ensuring your digital products are both functional and aesthetically pleasing.",
+    serviceImg: figmaImg
   },
   {
     id: 4,
     serviceTitle: "Banner Design",
     serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
+      "Our creative team designs eye-catching banners that effectively communicate your brand message and attract your target audience.",
+    serviceImg: bannerImg,
   },
   {
     id: 5,
-    serviceTitle: "Branding",
+    serviceTitle: "SEO",
     serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
-  },
-  {
-    id: 6,
-    serviceTitle: "Icon Design",
-    serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
+      "We optimize your website to rank higher on search engines, driving organic traffic and improving your online visibility.",
+    serviceImg: seoImg,
   },
   {
     id: 7,
     serviceTitle: "Graphic Design",
     serviceDescriptions:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-    serviceImg: musicImg,
+      "Our graphic design services include creating visually appealing logos, brochures, and other marketing materials to enhance your brand identity.",
+    serviceImg: graphicImg,
   },
 ];
+
 const projectData = [
   {
     id: 1,

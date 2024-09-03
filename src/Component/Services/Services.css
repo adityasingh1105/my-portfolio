@@ -38,7 +38,7 @@
   max-width: 220px;
   min-width: 220px;
   padding: 50px;
-  position: relative;
+  background-color: red;
 }
 
 .serviceCardMainDiv {
@@ -57,6 +57,7 @@
 .serviceCardInnerMain {
   transition: all 1s ease !important;
   background-color: #fff !important;
+  position: relative;
 
   & .serviceImgDiv {
     transition: all 0.3s ease-in-out;
@@ -95,8 +96,7 @@
 
 .serviceImgDiv {
   position: absolute;
-  /* background-color: #b1b492; */
-  bottom: 160px;
+  top: -30px;
   padding: 15px;
   border-radius: 50%;
   box-shadow: 0 0 5px #999999;
