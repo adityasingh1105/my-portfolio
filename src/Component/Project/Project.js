@@ -40,21 +40,109 @@ export default function Project() {
     return (
       <CardBox>
         {projectData.map((item, index) => (
-          <InnerCardBox key={index}>
+          <InnerCardBox
+            key={index}
+            onClick={() => {
+              if (item.link) window.open(item.link, "_blank");
+            }}
+          >
             <img
               src={item.img}
-              alt="ProejectImg"
-              style={{ height: "100%", width: "100%", borderRadius: "7px" }}
+              alt="ProjectImg"
+              style={{ height: "100%", width: "100%", borderRadius: "10px" }}
             />
             <InnerCardBoxHover className="InnerCardBoxHover">
+              <TitleTxt>{item.title}</TitleTxt>
               <BrandingTxt>{item.description}</BrandingTxt>
-              <TitleTxt style={{}}>{item.title}</TitleTxt>
+              <TechStack>Technologies: {item.technologies.join(", ")}</TechStack>
+              <TestimonialBox>
+                <TestimonialTitle>Testimonials</TestimonialTitle>
+                {item.testimonials.map((testimonial, i) => (
+                  <Testimonial key={i}>“{testimonial}”</Testimonial>
+                ))}
+              </TestimonialBox>
             </InnerCardBoxHover>
           </InnerCardBox>
         ))}
       </CardBox>
     );
   };
+
+  const CardBox = styled(Box)({
+    display: "flex",
+    gap: "30px",
+    margin: "0px 30px",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    marginBottom: "60px",
+  });
+
+  const InnerCardBox = styled(Box)({
+    width: "320px",
+    height: "320px",
+    position: "relative",
+    justifyContent: "center",
+    background: "#fff",
+    transition: "transform 0.3s ease-in-out",
+    "&:hover .InnerCardBoxHover": {
+      display: "flex",
+      justifyContent: "center",
+      flexDirection: "column",
+    },
+    "&:hover": {
+      transform: "scale(1.05)",
+    },
+  });
+
+  const InnerCardBoxHover = styled(Box)({
+    backgroundColor: "rgba(0, 0, 0, 0.5)",
+    position: "absolute",
+    height: "100%",
+    width: "100%",
+    top: 0,
+    display: "none",
+    padding: "20px",
+    boxSizing: "border-box",
+    borderRadius: "10px",
+    color: "#fff",
+    textAlign: "center",
+  });
+
+  const BrandingTxt = styled("p")({
+    fontSize: "14px",
+    fontWeight: "300",
+    marginTop: "10px",
+  });
+
+  const TitleTxt = styled("h2")({
+    fontSize: "18px",
+    fontWeight: "500",
+    marginBottom: "10px",
+  });
+
+  const TechStack = styled("p")({
+    fontSize: "12px",
+    fontWeight: "400",
+    marginTop: "10px",
+    color: "#ddd",
+  });
+
+  const TestimonialBox = styled("div")({
+    marginTop: "15px",
+  });
+
+  const TestimonialTitle = styled("h4")({
+    fontSize: "14px",
+    marginBottom: "8px",
+    color: "#fff",
+    textTransform: "uppercase",
+  });
+
+  const Testimonial = styled("p")({
+    fontSize: "12px",
+    fontStyle: "italic",
+    marginBottom: "5px",
+  });
 
   const TestimoniesUpperContent = () => {
     return (

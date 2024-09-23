@@ -172,42 +172,63 @@ const projectData = [
   {
     id: 1,
     title: "Sanatandhram",
-    description: "Application design for Sanatandhram.",
+    description:
+      "A spiritual music player and devotional activities platform that features customizable playlists, categories of divine bhajans, and detailed insights into song history, philosophy, and meaning. The app tracks listening statistics and includes a calendar for upcoming festivals and events.",
     img: Images.projectOneImg,
-    technologies: ["HTML", "CSS", "JavaScript"],
+    technologies: ["React Native"],
     client: "Sanatandhram Organization",
     completionDate: "2023-05-15",
     testimonials: [
       "Great job on the website design! Very professional.",
       "Easy to navigate and visually appealing.",
     ],
+    link: "https://sanatandhram-app.com",
   },
   {
     id: 2,
     title: "Design Process",
-    description: "Website development for Design Process.",
+    description: "Website development for Design Process, Inc.",
     img: Images.projectTwoImg,
-    technologies: ["React Native", "Firebase"],
+    technologies: ["React", "JavaScript", "Material UI",],
     client: "Design Process Inc.",
     completionDate: "2023-08-20",
     testimonials: [
       "The mobile app exceeded our expectations! Highly recommended.",
       "Smooth user experience and intuitive design.",
     ],
+    link: "https://designprocess-307320-react.b307320.stage.eastus.az.svc.builder.ai/",
   },
   {
     id: 3,
-    title: "New Staff Onboarding",
-    description: "Website Design for New Staff Onboarding.",
-    img: Images.projectOneImg,
-    technologies: ["Adobe Illustrator", "Adobe Photoshop"],
+    title: "Vision International",
+    description:
+      "A comprehensive platform for managing international student admissions, enrollment, and agent relationships for educational institutions. This system centralizes complex processes, facilitating seamless management and automating workflows.",
+    img: Images.projectTwoImg,
+    technologies: ["React", "JavaScript", "Material UI",],
     client: "ABC Company",
     completionDate: "2022-12-10",
     testimonials: [
-      "The branding and illustrations perfectly capture our company's identity. Amazing work!",
+      "The platform significantly streamlined our international recruitment process.",
+      "Efficient and intuitive. Great job!",
+    ],
+    link: "https://visioninternationalfinal-405941-react.b405941.dev.eastus.az.svc.builder.cafe/",
+  },
+  {
+    id: 4,
+    title: "New Staff Onboarding",
+    description:
+      "A portal designed to streamline employee onboarding, featuring profile management, project allocation tracking, and an interactive leave management system with automated approval/rejection emails.",
+    img: Images.projectOneImg,
+    technologies: ["Canvas App", "Power Automate", "SharePoint", "SQL"],
+    client: "ABC Company",
+    completionDate: "2022-12-10",
+    testimonials: [
+      "The app streamlined our HR processes, especially during the pandemic.",
+      "Excellent design and functionality for remote work.",
     ],
   },
 ];
+
 
 const testimoniesData = [
   {
