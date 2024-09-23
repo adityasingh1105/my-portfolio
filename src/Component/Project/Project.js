@@ -68,15 +68,6 @@ export default function Project() {
     );
   };
 
-  const CardBox = styled(Box)({
-    display: "flex",
-    gap: "30px",
-    margin: "0px 30px",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    marginBottom: "60px",
-  });
-
   const InnerCardBox = styled(Box)({
     width: "320px",
     height: "320px",
@@ -335,14 +326,6 @@ const OurProjectTxt = styled(Typography)({
   marginBottom: "25px",
 });
 
-const TitleTxt = styled(Typography)({
-  color: "#B7BA9C",
-  fontWeight: 600,
-  fontSize: "20px",
-  wordWrap: "break-word",
-  textAlign: "center",
-  marginTop: "10px",
-});
 
 const CardBox = styled(Box)({
   display: "flex",
@@ -351,40 +334,6 @@ const CardBox = styled(Box)({
   flexWrap: "wrap",
   justifyContent: "center",
   marginBottom: "60px",
-});
-
-const BrandingTxt = styled(Typography)({
-  color: "#FFF",
-  fontWeight: 600,
-  fontSize: "25px",
-  wordWrap: "break-word",
-  textAlign: "center",
-});
-
-const InnerCardBoxHover = styled(Box)({
-  backgroundColor: "rgba(0, 0, 0, 0.3)",
-  position: "absolute",
-  height: "100%",
-  width: "100%",
-  top: 0,
-  display: "none",
-  padding: "25px",
-  boxSizing: "border-box",
-  borderRadius: "7px",
-});
-
-const InnerCardBox = styled(Box)({
-  width: "320px",
-  height: "320px",
-  position: "relative",
-  justifyContent: "center",
-  background: "#fff",
-  transition: "transform 0.3s ease-in-out",
-  "&:hover .InnerCardBoxHover": {
-    display: "flex",
-    justifyContent: "center",
-    flexDirection: "column",
-  },
 });
 
 const InnerCardBoxSlider = styled(Box)({
