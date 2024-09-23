@@ -196,7 +196,8 @@ const projectData = [
       "The mobile app exceeded our expectations! Highly recommended.",
       "Smooth user experience and intuitive design.",
     ],
-    link: "https://designprocess-307320-react.b307320.stage.eastus.az.svc.builder.ai/",
+    // link: "https://designprocess-307320-react.b307320.stage.eastus.az.svc.builder.ai/",
+    link: "https://us04web.zoom.us/j/75195581381?pwd=i13h86wYHWXRcBYagtwL1aLTlB2hWC.1"
   },
   {
     id: 3,
